@@ -1,0 +1,3 @@
+[submodule "electronic-board-mockups"]
+	path = electronic-board-mockups
+	url = https://github.com/wendehals/electronic-board-mockups.git

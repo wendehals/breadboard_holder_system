@@ -3,14 +3,14 @@ include <electronic-board-mockups/Raspberry_Pi.scad>
 
 translate([wall_thickness + delta, 0, plate_thickness])
    union() {
-      Raspberry_Pi_Zero_Module();
+      Raspberry_Pi_ModelB_Module();
 
-//      translate([wall_thickness + 1 + delta, 23.5, plate_thickness + 5])
-//         Raspberry_Pi_Zero($fn=32);
-   }
+//      translate([(slot_depth - raspberry_depth)/2 + raspberry_depth, wall_thickness + 1 + delta + raspberry_width, plate_thickness + 5]) rotate([0, 0, 180])
+//         Raspberry_Pi_ModelB();
+}
 
 
-module Raspberry_Pi_Zero_Module() {
+module Raspberry_Pi_ModelB_Module() {
    difference() {
       module_frame();
 
@@ -19,13 +19,13 @@ module Raspberry_Pi_Zero_Module() {
    }
 
    translate([wall_thickness + 1, 0, plate_thickness])
-      cube([slot_depth - 2*wall_thickness - 2, wall_thickness + 1, height - plate_thickness]);
+      cube([slot_depth - 2*wall_thickness - 2, wall_thickness + 1, 5]);
 
    translate([(slot_depth - raspberry_depth)/2, wall_thickness + 1 + delta, plate_thickness])
       union() {
          screw_mount(3.5, 23.5, 0, $fn=32);
-         screw_mount(26.5, 23.5, 0, $fn=32);
+         screw_mount(raspberry_depth - 3.5, 23.5, 0, $fn=32);
          screw_mount(3.5, 81.5, 0, $fn=32);
-         screw_mount(26.5, 81.5, 0, $fn=32);
+         screw_mount(raspberry_depth - 3.5, 81.5, 0, $fn=32);
       }
 }

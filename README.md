@@ -11,6 +11,6 @@ The modules are easily exchangable, hold in position by small round neodymium ma
 
 There is a larger module with two mini breadboards. These breadboards are just as far away from each other that a wider microcontroller board like a ESP32 DEV Kit C fits in beetween them.
 
-This system is distributed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
+This repository is distributed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
 ![CC BY-NC-SA 4.0 Logo](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png)
