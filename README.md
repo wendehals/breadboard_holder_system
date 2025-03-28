@@ -9,7 +9,7 @@ This is a system of a frame holding a full-sized breadboard and three slots, two
 
 The modules are easily exchangable, hold in position by small round neodymium magnets of 4x1 mm² size. The modules snap into their position. The larger modules except the one for Raspberry Pis can be either used on the left or right side.
 
-There is a larger module with two mini breadboards. These breadboards are just as far away from each other that a wider microcontroller board like a ESP32 DEV Kit C fits in beetween them.
+There is a larger module with two mini breadboards. These breadboards are just as far away from each other that a wider microcontroller board like a ESP32 Dev Kit fits in between them.
 
 This repository is distributed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
