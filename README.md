@@ -2,6 +2,9 @@
 
 ![Modular Breadboard Holder](images/Example.png)
 
+Have a look on [Thingiverse](https://www.thingiverse.com/thing:6996046) for the *.stl files.
+
+
 ## The Modules Frame
 
 This is a modular breadboard holder system. It consists of a frame holding a full-sized breadboard and three slots, two larger and one smaller slot.
