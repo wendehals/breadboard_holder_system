@@ -1,6 +1,6 @@
 include <Commons.scad>
 
-color("cyan") translate([0, 0, -base_height + 1])
+color("silver") translate([0, 0, -base_height + 1])
    Jumper_Wires_Base();
 
 
@@ -41,8 +41,8 @@ module Jumper_Wires_Base() {
    translate([0.75, (width - 160)/2, plate_thickness])
       wire_holder(16);
 
-   translate([depth/2 + 2, 10, plate_thickness])
-      cube([wall_thickness, width - 20, inner_height]);
+   translate([depth/2 + 3, 0, plate_thickness])
+      cube([wall_thickness, width, inner_height]);
 
    translate([depth/2 + 4, (width - wall_thickness)/2, plate_thickness])
       cube([depth/2 - 14, wall_thickness, inner_height]);
