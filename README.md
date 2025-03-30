@@ -2,11 +2,15 @@
 
 ![Modular Breadboard Holder](images/Example.png)
 
+## The Modules Frame
+
 This is a modular breadboard holder system. It consists of a frame holding a full-sized breadboard and three slots, two larger and one smaller slot.
 
 ![](images/Modules_Frame.png)
 
 Each slot can hold various kind of modules e.g. for mini computers, microcontrollers, further breadboards, or simple trays. You can configure it in the way you like.
+
+## The Modules
 
 There are several modules available for
 
@@ -36,8 +40,13 @@ There are several modules available for
 ![Large Tray Module](images/Tray_Module.png)
 ![Small Tray Module](images/Tray_Small_Module.png)
 
-The modules are easily exchangable, hold in position by small round magnets of 4x1 mm² size. The modules snap into their position. The larger modules except the one for Raspberry Pis can be either used on the left or right side.
+The modules are easily exchangable, hold in position by small round magnets of 4 mm diameter and 1 mm thickness. The modules snap into their position. The larger modules except the one for Raspberry Pis can be either used on the left or right side.
 
+## The Base
+
+There is also a base that fits under the modules frame. It has space for jumper wires that are well organized in a comb-like structure, as well as two smaller trays. Like the modules magnets hold the base in place.
+
+![Jumper Wire Base](images/Jumper_Wires_Base.png)
 
 ## License
 
