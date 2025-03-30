@@ -63,14 +63,14 @@ module Modules_Frame() {
       }
 
       // bottom corner
-      translate([0, -0.5, -0.5])
-         cube([depth, 3, 1.5]);
-      translate([-0.5, 0, -0.5])
-         cube([3, width, 1.5]);
-      translate([0, width - 2.5, -0.5])
-         cube([depth, 3, 1.5]);
-      translate([depth - 2.5, 0, -0.5])
-         cube([3, width, 1.5]);
+      translate([0, -delta, -0.5])
+         cube([depth, wall_thickness + 2*delta, 1.5]);
+      translate([-delta, 0, -0.5])
+         cube([wall_thickness + 2*delta, width, 1.5]);
+      translate([0, width - wall_thickness - delta, -0.5])
+         cube([depth, wall_thickness + 2*delta, 1.5]);
+      translate([depth - wall_thickness - delta, 0, -0.5])
+         cube([wall_thickness + delta, width, 1.5]);
    }
 
    color("red")
@@ -90,7 +90,7 @@ module Modules_Frame() {
          translate([depth - wall_thickness - 1, 0, plate_thickness])
             cube([wall_thickness + 1, wall_thickness + 1 + breadboard_width + 2*delta, height]);
 
-         translate([depth - wall_thickness - 1 - 2*delta - breadboard_depth, wall_thickness + 1, 2*plate_thickness])
+         translate([depth - wall_thickness - 1 - breadboard_depth - 2*delta, wall_thickness + 1, 2*plate_thickness])
             breadboard_hole();
       }
 

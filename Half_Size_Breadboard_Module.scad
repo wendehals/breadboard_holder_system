@@ -5,7 +5,7 @@ translate([slot_depth + wall_thickness + delta, 2*slot_width + wall_thickness, p
    union() {
       Half_Size_Breadboard_Module();
 
-//      translate([breadboard_depth + 4.5, half_size_breadboard_width + 11.5, plate_thickness]) rotate([0, 0, 180])
+//      translate([breadboard_depth + 4.25, half_size_breadboard_width + 11.5, plate_thickness]) rotate([0, 0, 180])
 //         Breadboard(HALF_SIZE);
    }
 

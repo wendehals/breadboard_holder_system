@@ -5,8 +5,8 @@ translate([wall_thickness + delta, 0, plate_thickness])
    union() {
       Raspberry_Pi_ModelB_Module();
 
-//      translate([(slot_depth - raspberry_depth)/2 + raspberry_depth, wall_thickness + 1 + delta + raspberry_width, plate_thickness + 5]) rotate([0, 0, 180])
-//         Raspberry_Pi_ModelB();
+//      translate([(slot_depth - raspberry_depth)/2, wall_thickness + 1 + delta, plate_thickness + 5])
+//         Raspberry_Pi_4_ModelB();
 }
 
 

@@ -25,7 +25,7 @@ module Jumper_Wires_Base() {
          translate([i[0] - 4, i[1] - 4, plate_thickness])
             cube([8, 8, inner_height]);
 
-         magnet_hole(i[0], i[1], inner_height + delta);
+         magnet_hole(i[0], i[1], inner_height + plate_thickness - magnet_height);
       }
    }
 
