@@ -1,8 +1,7 @@
 include <Commons.scad>
 
-translate([depth - small_slot_depth, width - wall_thickness - delta - small_slot_width, plate_thickness])
-   Tray_Small_Module();
 
+//Tray_Small_Module();
 
 module Tray_Small_Module() {
    small_module_frame();

@@ -1,8 +1,7 @@
 include <Commons.scad>
 
-color("silver") translate([0, 0, -base_height + 1])
-   Jumper_Wires_Base();
 
+//Jumper_Wires_Base();
 
 base_height = 20;
 inner_height = base_height - plate_thickness - 1;
@@ -25,6 +24,8 @@ module Jumper_Wires_Base() {
          translate([i[0] - 4, i[1] - 4, plate_thickness])
             cube([8, 8, inner_height]);
 
+         // two magnets above each other
+         magnet_hole(i[0], i[1], inner_height + plate_thickness - 2*magnet_height);
          magnet_hole(i[0], i[1], inner_height + plate_thickness - magnet_height);
       }
    }

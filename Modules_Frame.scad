@@ -1,12 +1,8 @@
 include <Commons.scad>
 include <electronic-board-mockups/Breadboards.scad>
 
-color("lime")
-   Modules_Frame();
 
-//translate([depth - wall_thickness - 1 - delta - breadboard_depth, wall_thickness + 1 + delta, 2*plate_thickness])
-//   Breadboard();
-
+//Modules_Frame();
 
 module Modules_Frame() {
    difference() {

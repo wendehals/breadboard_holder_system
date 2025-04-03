@@ -1,14 +1,8 @@
 include <Commons.scad>
 include <electronic-board-mockups/Raspberry_Pi.scad>
 
-translate([wall_thickness + delta, 0, plate_thickness])
-   union() {
-      Raspberry_Pi_Zero_Module();
 
-//      translate([wall_thickness + 1 + delta, 23.5, plate_thickness + 5])
-//         Raspberry_Pi_Zero($fn=32);
-   }
-
+//Raspberry_Pi_Zero_Module();
 
 module Raspberry_Pi_Zero_Module() {
    difference() {

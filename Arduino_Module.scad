@@ -1,14 +1,8 @@
 include <Commons.scad>
 include <electronic-board-mockups/Arduino.scad>
 
-translate([wall_thickness + delta, 0, plate_thickness])
-   union() {
-      Arduino_Module();
 
-//      translate([(slot_depth - arduino_depth)/2, wall_thickness + 1 + delta, plate_thickness + 5 ])
-//         Arduino(MEGA2560);
-   }
-
+//Arduino_Module();
 
 module Arduino_Module() {
    module_frame();

@@ -1,14 +1,8 @@
 include <Commons.scad>
 include <electronic-board-mockups/Breadboards.scad>
 
-translate([slot_depth + wall_thickness + delta, 2*slot_width + wall_thickness, plate_thickness]) rotate([0, 0, 180])
-   union() {
-      Half_Size_Breadboard_Module();
 
-//      translate([breadboard_depth + 4.25, half_size_breadboard_width + 11.5, plate_thickness]) rotate([0, 0, 180])
-//         Breadboard(HALF_SIZE);
-   }
-
+//Half_Size_Breadboard_Module();
 
 module Half_Size_Breadboard_Module() {
    difference() {

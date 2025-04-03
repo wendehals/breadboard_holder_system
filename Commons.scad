@@ -2,23 +2,23 @@ include <electronic-board-mockups/Commons.scad>
 include <electronic-board-mockups/Breadboards.scad>
 include <electronic-board-mockups/Raspberry_Pi.scad>
 
-magnet_height = 0.8;
+magnet_height = 1;
 magnet_diameter = 4;
 
-delta = 0.25;
+delta = 0.35;
 
 plate_thickness = 2;
 wall_thickness = 2;
 
 slot_width = 106;
-slot_depth = raspberry_depth + 2*wall_thickness + 2 + 2*delta; // 62.5
+slot_depth = raspberry_depth + 2*wall_thickness + 2 + 2*delta; // 62.7
 
 width = 2*slot_width + wall_thickness; // 214
-depth = slot_depth + breadboard_depth + 3*wall_thickness + 1 + 4*delta; // 125.5
+depth = slot_depth + breadboard_depth + 3*wall_thickness + 1 + 4*delta; // 126.1
 height = breadboard_height + plate_thickness; // height over plate, 12
 
-small_slot_depth = depth - slot_depth - 2*wall_thickness - 2*delta; // 58.5
-small_slot_width = width - breadboard_width - 3*wall_thickness - 1 - 4*delta; // 40
+small_slot_depth = depth - slot_depth - 2*wall_thickness - 2*delta; // 58.7
+small_slot_width = width - breadboard_width - 3*wall_thickness - 1 - 4*delta; // 39.6
 
 bottom_magnet_positions = [
    [6, 6],
